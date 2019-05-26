@@ -72,7 +72,7 @@ function stopCountdown() {
 
 function imageRetr() {
 
-    request.open('GET', queryString, false);
+    request.open('GET', queryString, true);
     request.onload = function () {
 
 
