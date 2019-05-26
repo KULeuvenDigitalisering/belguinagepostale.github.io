@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bé(l)guinage Postale - The Belgian Postcards Project</title>
+    <link href="transcript_design.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="logo">
+    <img src="LogoPostcard.png" style="width:500px;height:200px;">
+</div>
+
+
+<ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="collection.html">The Collection</a></li>
+    <li><a href="puzzle.html">The Game</a></li>
+    <li><a href="index.html">Home</a></li>
+</ul>
+
+
+<div class="container">
+
+<div id="qImg"></div>
+
+<div id="qImg2"></div>
+
+<a href="quiz2.html" id="buttonEnd" class="hidden">Thanks for your contribution! Now you can go to the next level!</a>
+<a href="quiz2.html" id="buttonEnd2" class="hidden">The answer is correct! Go to the next level!</a>
+
+<div class="help-tip">
+    <p>Welcome to the Transcription Game!
+        <br>Read carefully the greetings letter on the left and compare it with the transcription on the right. Do they match?
+        If they don't, a form will appear. Please, write the correct transcription in the form.
+    </p>
+</div>
+
+
+<div id="question"></div>
+<div id="choices">
+    <!--<div class="choice" id="correct"></div>-->
+    <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+    <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+</div>
+<br>
+<div hidden id="form">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfmJQUTAVyctGgqjwQeaWgrz9oR6oqIWIuRPG66cfrml29_dA/viewform?entry.1152871569=Test?embedded=true"
+            width="500" height="400" frameborder="2 px" marginheight="0" marginwidth="0">Loading....</iframe>
+
+</div>
+
+
+</div>
+<script src="controller.js"></script>
+</body>
+</html>

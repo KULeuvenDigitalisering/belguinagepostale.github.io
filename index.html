@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bé(l)guinage Postale - The Belgian Postcards Project</title>
+    <link href="styleDesign.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <script src="scriptDesign.js"></script>
+</head>
+<body>
+
+
+<div class="logo">
+    <img src="LogoPostcard.png" style="width:500px;height:200px;">
+</div>
+
+
+<ul>
+    <li><a href="about.html">About</a></li>
+    <li><a href="collection.html">The Collection</a></li>
+    <li><a href="puzzle.html">The Game</a></li>
+    <li><a href="index.html">Home</a></li>
+</ul>
+
+<div class="container">
+
+    <img src="seppia3.jpg" alt="Notebook" style="width:1275px;height:430px">
+    <a href="puzzle.html" class="btn">Start playing!</a>
+
+    <div class="content">
+        <h3>Learn about Flemish Bèguinages,<br>
+            Discover old picture postcards,<br>
+            Help reconstructing the past,<br>
+            while showing your gaming ability!</h3>
+        <p>Bé(l)guinage Postale is a crowdsourcing and gamification project
+            prototype based on the Postcard Collection hold by KU Leuven
+            University Library. Bé(l)guinage Postale invites the public to
+            transcribe Belgian picture postcards greetings while playing.
+        </p>
+    </div>
+
+</div>
+
+
+    <div class="slideshow-container">
+
+        <div class="writing">
+
+        <h2>Helping and learning while playing</h2>
+            <p>Discover the history of the Flemish Bèguinages
+                while playing puzzle and quiz games and help with the transcription
+                of old Belgian picture postcards. You are asked to complete a four levels game,
+                where you will have to collect points and prove your guessing and transcription abilities.
+            </p>
+
+        </div>
+        <div class="mySlides fade">
+            <img src="puzzle.PNG" border="4" style="width:100%;">
+            <button class="container_button">Compose a puzzle</button>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="quiz.PNG" border="4"  style="width:100%;">
+            <button class="container_button">Guess the right year and provenance</button>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="transcript.png" style="width:100%;">
+            <button class="container_button">Help with the postcards transcription</button>
+        </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+<div class="reasons_container">
+    <div class="writing">
+
+        <h2>Four reasons to contribute to the project</h2>
+        <img src="Info_container.png" style="width:755px;height:425px">
+
+        <a href="collection.html" class="container_button">Learn more</a>
+    </div>
+</div>
+
+
+<div class="footer">
+
+</div>
+
+<script>
+    showSlides(slideIndex);
+
+
+</script>
+</body>
+
+</html>

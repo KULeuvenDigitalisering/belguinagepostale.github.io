@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <script src="scriptPuzzle.js"></script>
+    <link href="stylePuzzle.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
+
+
+    <title>Puzzle Game</title>
+
+</head>
+<body>
+
+<div class="logo">
+    <img src="LogoPostcard.png" style="width:500px;height:200px;">
+</div>
+
+
+<ul>
+    <li><a href="about.html">About</a></li>
+    <li><a href="collection.html">The Collection</a></li>
+    <li><a href="puzzle.html">The Game</a></li>
+    <li><a href="index.html">Home</a></li>
+</ul>
+
+<div class="container">
+
+    <canvas id="myCanvas" width="300" height="190" style="border: 1px;" onclick="onCanvasClick(event);">
+    </canvas>
+
+
+    <a href="beijnhof1.html" id="buttonEnd" class="hidden">You Win! Go to the next level!</a>
+
+
+    <div class="help-tip">
+        <p>Welcome to the Puzzle Game!
+            <br> You have to re-assemble the puzzle by swapping pieces.
+            Click on the first piece that you want to swap.
+            The color surrounding the piece will change to red. Click on the piece you want to swap it with.
+            The pieces will then be swapped.
+
+            <br>
+            <br>
+            When you are ready click "Start".
+            You have 60 seconds to complete the puzzle.
+
+        </p>
+    </div>
+
+    <div id="score">0</div>
+
+    <button id="button" class="btn" onclick= "startTimer(); hideshow(); ">Start</button>
+
+    <div id="count" class="counter">60</div>
+
+</div>
+
+<div class="preview">
+<img id="preview" src="">
+</div>
+
+
+
+
+
+
+
+<script>
+    var button = document.getElementById('button')
+    button.addEventListener('click',hideshow,false);
+
+    function hideshow() {
+        document.getElementById('button').style.display = 'block';
+        this.style.display = 'none'
+    }
+
+
+</script>
+</body>
+
+</html>
+

@@ -1,0 +1,276 @@
+html body{
+    background: #eee6dd;
+}
+
+.logo img{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    padding-right: 100px;
+    text-decoration: none;
+    background: #eee6dd;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 170px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    background-color: #eee6dd;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: #45454d;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Quicksand;
+}
+
+li a:hover {
+    background-color: #e3d9cf;
+}
+
+
+@media screen and (min-width: 600px) {
+    .card {
+        flex: 1 1 calc(50% - 2rem);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .card {
+        flex: 1 1 calc(33% - 2rem);
+    }
+}
+
+
+
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+    position: relative;
+    width: 100%;
+    height: 150%;
+    display: block;
+    background: #AAA097;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Make the image responsive */
+.container img {
+    display: block;
+
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+    position: absolute;
+    display: block;
+    top: 42%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background: #18191A;
+    color: white;
+    font-size: 20px;
+    font-family: Calibri;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container .btn:hover {
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0.7;
+}
+
+.counter {
+    position: absolute;
+    right: 200px;
+    top: 5%;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 50px;
+}
+
+.preview {
+    position: relative;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+}
+
+.preview img {
+    margin-left: 55px;
+    position: center;
+}
+
+
+#score {
+    position: relative;
+    float: left;
+    margin-left: 50px;
+    color: rgba(0, 0, 0, 0.6);;
+    font-size: 25px;
+}
+
+
+#buttonEnd {
+    position: absolute;
+    top: 40%;
+    left: 22%;
+    text-decoration: none;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 20px;
+    font-family: Calibri;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: inline;
+}
+
+
+.help-tip{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 5px;
+    cursor: default;
+}
+
+.help-tip:before{
+    content:'?';
+    font-weight: bold;
+    color:#fff;
+}
+
+.help-tip:hover p{
+    display:block;
+    transform-origin: 100% 0%;
+
+    -webkit-animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+
+}
+
+.help-tip p{
+    display: none;
+    text-align: left;
+    background-color: #1E2021;
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    right: -4px;
+    color: #FFF;
+    font-size: 15px;
+    font-family: Quicksand;
+    line-height: 1.4;
+}
+
+.help-tip p:before{
+    position: absolute;
+    content: '';
+    width:0;
+    height: 0;
+    border:6px solid transparent;
+    border-bottom-color:#1E2021;
+    right:10px;
+    top:-12px;
+}
+
+.help-tip p:after{
+    width:100%;
+    height:40px;
+    content:'';
+    position: absolute;
+    top:-40px;
+    left:0;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity:0;
+        transform: scale(0.6);
+    }
+
+    100% {
+        opacity:100%;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:100%; }
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

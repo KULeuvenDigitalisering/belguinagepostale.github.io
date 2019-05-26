@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+
+    <title>Bé(l)guinage Postale - The Belgian Postcards Project</title>
+    <link href="styleQuiz.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+
+<div class="logo">
+    <img src="LogoPostcard.png" style="width:500px;height:200px;">
+</div>
+
+
+<ul>
+    <li><a href="about.html">About</a></li>
+    <li><a href="collection.html">The Collection</a></li>
+    <li><a href="puzzle.html">The Game</a></li>
+    <li><a href="index.html">Home</a></li>
+</ul>
+
+
+<div class="container">
+
+<canvas id="myCanvas" width="300" height="300">
+
+    </canvas>
+
+<a href="transcript_index.html" id="buttonEnd" class="hidden">You Win! Go to the next level!</a>
+
+<div class="help-tip">
+    <p>Welcome to the Quiz Game!
+        <br>Guess the right year of the picture postcard. As soon as you think to have chosen answer, click on "Get Result".
+    </p>
+</div>
+
+
+
+<div id="quiz"></div>
+<button id="submit">Get Result</button>
+<div id="results"></div>
+
+
+</div>
+<script src="scriptQuiz.js">
+
+</script>
+
+
+
+</body>
+</html>
