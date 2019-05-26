@@ -51,7 +51,7 @@ function startTimer(){
             }).then((value) => {
                 switch(value) {
                     case "catch":
-                        window.location.href = "index.html";
+                        window.location.href = "puzzle.html";
                         break;
 
                     case "default":
