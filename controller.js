@@ -22,7 +22,7 @@ let questions = [
         imgSrc2 : "R_2.png",
         choiceA : "True",
         choiceB : "False",
-        correct : "A"
+        correct : "B"
     },{
         question : "Is this transcription correct?",
         imgSrc : "V_3.png",
