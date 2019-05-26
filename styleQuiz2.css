@@ -126,7 +126,14 @@ li a:hover {
 
 #buttonEnd img{
     text-align: center;
+    padding: 10px;
 }
+
+#buttonEnd p {
+    margin-top: 10px;
+    text-align: center;
+}
+
 
 .hidden {
     display: none;
