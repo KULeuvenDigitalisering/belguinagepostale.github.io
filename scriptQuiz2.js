@@ -148,7 +148,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 //it shows the alert if the puzzle is completed
                 swal({
                     title: "Right answer!",
-                    text: "Great! You complete the games!",
+                    text: "Great! You've completed the games!",
                     buttons: {
                         catch: "Receive your certificate",
                     }
