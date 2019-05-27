@@ -275,7 +275,7 @@ li a:hover {
 .footer {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 2%;
     top: 380%;
     width: 100%;
     background-color: #eee6dd;
@@ -283,8 +283,9 @@ li a:hover {
 }
 
 .footer p{
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     text-align: center;
 }
+
 
 @media screen and (max-width: 320px) { @viewport { width: 320px; } }
