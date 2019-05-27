@@ -122,9 +122,9 @@ body{
 
 
 #form {
-    margin: 5%;
     text-align: center;
-    margin-left: 10%;
+    margin-left: 8%;
+    margin-bottom: 70px;
 
 }
 
@@ -162,7 +162,6 @@ body{
 
 
 
-
 #buttonEnd {
     position: absolute;
     top: 96%;
@@ -174,10 +173,12 @@ body{
     background: rgba(0, 0, 0, 0.75);
     color: white;
     font-size: 20px;
-    font-family: Calibri;
+    font-family: Quicksand;
     padding: 15px 30px;
     border-radius: 5px;
 }
+
+
 
 .hidden {
     display: none;
@@ -190,7 +191,7 @@ body{
 #buttonEnd2{
     position: absolute;
     top: 93%;
-    left: 50%;
+    left: 53%;
     margin-bottom: 60px;
     text-decoration: none;
     transform: translate(-50%, -50%);
@@ -198,7 +199,7 @@ body{
     background: rgba(0, 0, 0, 0.75);
     color: white;
     font-size: 20px;
-    font-family: Calibri;
+    font-family: Quicksand;
     padding: 15px 30px;
     border-radius: 5px;
 }
