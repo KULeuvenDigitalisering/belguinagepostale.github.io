@@ -110,6 +110,32 @@ li a:hover {
     }
 }
 
+#button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    text-decoration: none;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    font-size: 20px;
+    font-family: Calibri;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: inline;
+}
+
+
+
 
 #buttonEnd {
     position: absolute;
