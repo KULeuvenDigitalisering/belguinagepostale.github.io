@@ -118,12 +118,12 @@ li a:hover {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.75);
-    color: white;
     font-size: 20px;
-    font-family: Calibri;
+    font-family: Quicksand;
     padding: 15px 30px;
-    border-radius: 5px;
     border: none;
+    border-radius: 5px;
+    
 }
 
 .hidden {
