@@ -172,6 +172,17 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
             }
             else{
                 answerContainers[i].style.color = 'red';
+                function toggleButton() {
+                    document.getElementById("button").className = 'show';
+                } toggleButton();
+
+                var button = document.getElementById('button')
+                button.addEventListener('click',hideshow,false);
+
+                function hideshow() {
+                    document.getElementById('button').style.display = 'block';
+                    this.style.display = 'none'
+                }
 
             }
         }
