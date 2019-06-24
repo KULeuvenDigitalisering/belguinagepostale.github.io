@@ -5,8 +5,7 @@ var img;
 var request  = new XMLHttpRequest();
 var stepValue = 40;
 var cityValue = 'begijnhof';
-var queryString = 'https://resolver.icts.kuleuven.be/search?query='
-    + cityValue + ':%22post%20cards%22%20resource_type:images&institution=KUL' + stepValue;
+var queryString = 'https://resolver.icts.kuleuven.be/search?query=' + cityValue + ':%22post%20cards%22%20resource_type:images&institution=KUL' + stepValue;
 var randomAnswer;
 
 
